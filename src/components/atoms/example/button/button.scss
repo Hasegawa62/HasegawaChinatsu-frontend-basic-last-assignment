@@ -5,37 +5,28 @@
   color: $white;
   font-size: $font-S;
   font-family: $fontfamily-gothic;
-  line-height: 20px;
   text-align: center;
-  display: table;
-}
-.button:hover {
-  background-color: $orange_bistre;
-  text-decoration: none;
-  color: $white;
   transition: 0.2s;
-}
-
-.btn-text {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-@media (min-width: $breakpoint-S) and (max-width: $breakpoint-M) {
-  .button {
-    width: 180px;
-    height: 45px;
+  width: 180px;
+  height: 45px;
+  display: block;
+  padding: 12.5px 0;
+  &:hover {
+    background-color: $orange_bistre;
+    text-decoration: none;
+    color: $white;
   }
 }
-@media (min-width: $breakpoint-M) and (max-width: $breakpoint-L) {
+
+@media (min-width: $breakpoint-M) {
   .button {
     width: 150px;
     height: 55px;
+    padding: 17.5px 0;
   }
 }
 @media (min-width: $breakpoint-L) {
   .button {
     width: 200px;
-    height: 55px;
   }
 }
