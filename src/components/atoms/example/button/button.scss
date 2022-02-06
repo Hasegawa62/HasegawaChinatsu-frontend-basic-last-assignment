@@ -1,0 +1,32 @@
+@use "../../../variables" as *;
+
+.button {
+  background-color: $black;
+  color: $white;
+  font-size: $font-S;
+  font-family: $fontfamily-gothic;
+  text-align: center;
+  transition: 0.2s;
+  width: 180px;
+  height: 45px;
+  display: block;
+  padding: 12.5px 0;
+  &:hover {
+    background-color: $orange_bistre;
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+@media (min-width: $breakpoint-M) {
+  .button {
+    width: 150px;
+    height: 55px;
+    padding: 17.5px 0;
+  }
+}
+@media (min-width: $breakpoint-L) {
+  .button {
+    width: 200px;
+  }
+}
