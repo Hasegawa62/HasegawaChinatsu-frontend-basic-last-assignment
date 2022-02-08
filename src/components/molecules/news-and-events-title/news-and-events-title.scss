@@ -1,0 +1,25 @@
+@use "../../variables" as *;
+
+.news-events-title {
+  display: flex;
+  width: fit-content;
+}
+.news-events-title1 {
+  font-family: $fontfamily-mincho;
+  font-size: $font-L;
+}
+.news-events-title2 {
+  font-family: $fontfamily-gothic;
+  font-size: $font-M;
+  margin: 3px 16px;
+}
+
+@media (min-width: $breakpoint-L) {
+  .news-events-title1 {
+    font-size: $font-XXL;
+  }
+  .news-events-title2 {
+    font-size: $font-M;
+    margin: 18.59px 15.47px;
+  }
+}
