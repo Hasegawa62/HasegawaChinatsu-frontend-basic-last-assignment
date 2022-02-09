@@ -4,25 +4,31 @@
   color: $black;
   text-align: center;
 }
-.title-text {
+.message h1 {
   font-family: $fontfamily-mincho;
   font-size: $font-L;
   line-height: 30px;
-  margin-bottom: 8px;
+  padding: 2px 0 8px;
+  margin: 12px 12.5px 0;
 }
-.descriptive-text {
+.message p {
   font-family: $fontfamily-gothic;
   font-size: $font-S;
   line-height: 28px;
+  padding: 0 30.5px;
+  margin: 0 20px 10px;
 }
 
 @media (min-width: $breakpoint-L) {
-  .title-text {
+  .message h1 {
     font-size: $font-XL;
     line-height: 54px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin: 52px 20px 0;
   }
-  .descriptive-text {
+  .message p {
     line-height: 36px;
+    padding: 0 101.5px;
+    margin-bottom: 52px;
   }
 }
