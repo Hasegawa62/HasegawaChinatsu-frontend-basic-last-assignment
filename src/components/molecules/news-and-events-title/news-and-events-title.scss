@@ -1,25 +1,35 @@
 @use "../../variables" as *;
 
 .news-events-title {
-  display: flex;
   width: fit-content;
-}
-.news-events-title1 {
-  font-family: $fontfamily-mincho;
-  font-size: $font-L;
-}
-.news-events-title2 {
-  font-family: $fontfamily-gothic;
-  font-size: $font-M;
-  margin: 3px 16px;
+
+  .news-events-title-container {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 32px;
+
+    .news-events-title-EN {
+      font-family: $fontfamily-mincho;
+      font-size: $font-L;
+      margin-bottom: 0;
+    }
+
+    .news-events-title-JP {
+      font-size: $font-M;
+      margin-left: 16px;
+    }
+  }
 }
 
 @media (min-width: $breakpoint-L) {
-  .news-events-title1 {
-    font-size: $font-XXL;
-  }
-  .news-events-title2 {
-    font-size: $font-M;
-    margin: 18.59px 15.47px;
+  .news-events-title {
+    .news-events-title-container {
+      .news-events-title-EN {
+        font-size: $font-XXL;
+      }
+      .news-events-title-JP {
+        font-size: $font-M;
+      }
+    }
   }
 }
