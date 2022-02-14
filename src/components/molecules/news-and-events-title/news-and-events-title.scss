@@ -12,22 +12,17 @@
       font-family: $fontfamily-mincho;
       font-size: $font-L;
       margin-bottom: 0;
+
+      @media (min-width: $breakpoint-L) {
+        font-size: $font-XXL;
+      }
     }
 
     .news-events-title-JP {
       font-size: $font-M;
       margin-left: 16px;
-    }
-  }
-}
 
-@media (min-width: $breakpoint-L) {
-  .news-events-title {
-    .news-events-title-container {
-      .news-events-title-EN {
-        font-size: $font-XXL;
-      }
-      .news-events-title-JP {
+      @media (min-width: $breakpoint-L) {
         font-size: $font-M;
       }
     }
