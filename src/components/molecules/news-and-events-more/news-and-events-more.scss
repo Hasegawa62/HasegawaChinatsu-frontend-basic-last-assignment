@@ -2,14 +2,16 @@
 
 .news-and-events-more {
   font-size: $font-S;
-  font-family: $fontfamily-gothic;
   width: fit-content;
   transition: 0.2s;
+  color: $black;
 
   &:hover {
     color: $gray_nobel;
+    text-decoration: none;
   }
-}
-.fa-solid.fa-chevron-right {
-  padding-left: 16px;
+
+  .fas.fa-chevron-right {
+    margin-left: 16px;
+  }
 }
