@@ -1,0 +1,17 @@
+@use "../../variables" as *;
+
+.news-and-events-more {
+  font-size: $font-S;
+  width: fit-content;
+  transition: 0.2s;
+  color: $black;
+
+  &:hover {
+    color: $gray_nobel;
+    text-decoration: none;
+  }
+
+  .fas.fa-chevron-right {
+    margin-left: 16px;
+  }
+}
