@@ -1,62 +1,60 @@
 @use "../../variables" as *;
 
-.plans {
-  .plan {
-    text-align: center;
-    padding-left: 0;
-    margin-bottom: 24px;
-    @media (min-width: $breakpoint-M) {
-      margin-bottom: 0;
-    }
+.plan {
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 24px;
+  @media (min-width: $breakpoint-M) {
+    margin-bottom: 0;
   }
+}
 
-  .plan-title {
-    background-color: $orange_zorba;
-    color: $white;
-    font-weight: bold;
-    font-size: $font-L;
+.plan-title {
+  background-color: $orange_zorba;
+  color: $white;
+  font-weight: bold;
+  font-size: $font-L;
+  padding: 20px 0;
+}
+.plan-detail {
+  li {
+    list-style: none;
+    border: solid 1px $gray_gainsboro;
+    border-bottom: none;
     padding: 20px 0;
   }
-  .plan-detail {
-    li {
-      list-style: none;
-      border: solid 1px $gray_gainsboro;
-      border-bottom: none;
-      padding: 20px 0;
-    }
-    li:last-child {
-      border-bottom: solid 1px $gray_gainsboro;
-    }
+  li:last-child {
+    border-bottom: solid 1px $gray_gainsboro;
+  }
 
-    .plan-price {
-      background-color: $gray_desertStorm;
-      padding: 24px 0;
+  .plan-price {
+    background-color: $gray_desertStorm;
+    padding: 24px 0;
 
-      .plan-price-text {
-        margin-bottom: 16px;
-        color: $orange_bistre;
-        font-weight: bold;
-        font-size: $font-XXL;
-        span {
-          font-size: $font-L;
-        }
+    .plan-price-text {
+      margin-bottom: 16px;
+      color: $orange_bistre;
+      font-weight: bold;
+      font-size: $font-XXL;
+      span {
+        font-size: $font-L;
       }
-      .plan-price-per {
-        font-size: $font-S;
-        margin: 0;
-      }
+    }
+    .plan-price-per {
+      font-size: $font-S;
+      margin: 0;
     }
   }
-  ul:nth-child(even) {
-    border: solid 5px $orange_bistre;
-    .plan-title {
-      background-color: $orange_bistre;
-      padding: 15px 0 20px;
-    }
-    .plan-detail {
-      li:last-child {
-        padding-bottom: 15px;
-      }
+}
+ul:nth-child(even) {
+  border: solid 5px $orange_bistre;
+  .plan-title {
+    background-color: $orange_bistre;
+    padding: 15px 0 20px;
+  }
+  .plan-detail {
+    li:last-child {
+      padding-bottom: 15px;
     }
   }
 }
