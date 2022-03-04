@@ -16,6 +16,7 @@
       color: $white;
       font-weight: bold;
       font-size: $font-L;
+      border: none;
     }
     &:not(:last-child) {
       border-bottom: none;
@@ -40,6 +41,7 @@
   }
   &:nth-child(even) {
     border: solid 5px $orange_bistre;
+
     li {
       &:first-child {
         background-color: $orange_bistre;
