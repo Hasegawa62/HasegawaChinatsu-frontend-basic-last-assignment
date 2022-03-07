@@ -1,0 +1,69 @@
+@use "../../variables" as *;
+
+.organisms-events {
+  .events-contents {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: $white;
+    article {
+      border: 1px solid $gray_gainsboro;
+      &:not(:last-child) {
+        border-bottom: none;
+      }
+      a {
+        text-decoration: none;
+        display: flex;
+        .events-img-wrapper {
+          overflow: hidden;
+          flex-shrink: 0;
+          img {
+            transition-duration: 0.5s;
+            object-fit: cover;
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+        }
+        .events-article-title-time {
+          padding: 37.5px 24px;
+          h3 {
+            font-size: $font-M;
+            color: $black;
+            transition-duration: 0.2s;
+            margin-bottom: 8px;
+            font-weight: normal;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            &:hover {
+              color: $orange_bistre;
+            }
+          }
+          time {
+            font-size: $font-XS;
+            line-height: 12px;
+            color: $gray_nobel;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .news-and-events-more-wrapper {
+    text-align: right;
+  }
+}
+@media (max-width: $breakpoint-L) {
+  .organisms-events {
+    padding-bottom: 35px;
+    article {
+      padding: 10px 20px 16px;
+    }
+    article {
+      .events-img {
+        display: none;
+      }
+    }
+  }
+}
