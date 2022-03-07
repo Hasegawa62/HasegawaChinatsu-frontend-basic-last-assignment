@@ -1,0 +1,42 @@
+@use "../../variables" as *;
+
+.organisms-news {
+  padding-bottom: 35px;
+  .news-contents {
+    margin-bottom: 30px;
+    background-color: $white;
+    article {
+      padding: 20px;
+      border: 1px solid $gray_gainsboro;
+      &:not(:last-child) {
+        border-bottom: none;
+      }
+      a {
+        text-decoration: none;
+        .news-time {
+          font-size: $font-XS;
+          line-height: 1;
+          color: $gray_nobel;
+          margin-bottom: 10px;
+          display: block;
+        }
+        .news-article-title {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: $font-M;
+          color: $black;
+          font-weight: normal;
+          margin: 0;
+          transition-duration: 0.2s;
+          &:hover {
+            color: $orange_bistre;
+          }
+        }
+      }
+    }
+  }
+  .news-and-events-more-wrapper {
+    text-align: right;
+  }
+}
