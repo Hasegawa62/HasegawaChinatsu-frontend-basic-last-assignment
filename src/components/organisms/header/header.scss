@@ -5,13 +5,14 @@
   background-color: $black;
   .navbar-brand {
     margin: 0;
-    padding: 18px 0;
+    padding: 15px 0;
     img {
-      width: 120px;
+      height: 20px;
     }
   }
   .navbar-toggler {
     outline: none;
+    border: none;
   }
   .navbar-nav {
     margin-left: 16px;
@@ -28,28 +29,30 @@
       padding: 0;
       margin-left: 12px;
       background-color: $black;
+      border-radius: 0;
       .dropdown-item {
         padding: 15px 0px;
         background-color: $black;
         color: $white;
+        font-size: $font-S;
       }
     }
   }
 }
 @media (min-width: $breakpoint-XL) {
   .navbar {
+    padding: 0 30px;
     background-color: $black_50;
     .navbar-brand {
       img {
-        width: 140px;
+        height: 24px;
       }
     }
     .navbar-nav {
-      margin-right: 30px;
       margin-left: auto;
       .nav-item {
         .nav-link {
-          padding: 20px;
+          padding: 35px 20px;
           transition-duration: 0.2s;
           &:hover {
             color: $gray_nobel;
