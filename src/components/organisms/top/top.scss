@@ -1,10 +1,11 @@
 @use "../../variables" as *;
 
 .top {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   .top-image-wrapper {
+    height: 36vw;
     background-image: url(./top-image.png);
-    height: 360px;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,9 +28,9 @@
 
 @media (min-width: $breakpoint-L) {
   .top {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     .top-image-wrapper {
-      height: 100%;
+      height: 60vw;
       h2 {
         font-size: $font-XL;
       }
