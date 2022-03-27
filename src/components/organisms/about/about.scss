@@ -1,10 +1,10 @@
 @use "../../variables" as *;
 
 .about {
-  padding: 0 135px 40px;
+  margin-bottom: 40px;
   background-color: $white;
-  .row {
-    .col-6.col-lg-3 {
+  .about-img-wrapper {
+    .about-img {
       img {
         width: 100%;
       }
