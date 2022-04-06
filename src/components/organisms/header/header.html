@@ -11,13 +11,12 @@
         <li class="nav-item active">
           <a class="nav-link" href="#">HOME</a>
         </li>
-        <li class="nav-item active dropdown">
-          <a class="nav-link dropdown-toggle float-right d-xl-none" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="img/icon-plus.svg">
-              <a class="nav-link concept " tabindex="-1">CONCEPT</a>
+        <li class="nav-item active">
+          <a class="nav-link float-right d-xl-none icon-plus-wrapper" href="#concept-collapse"  role="button" data-toggle="collapse"  aria-expanded="false" aria-controls="collapse">
+            <img src="img/icon-plus.svg">
           </a>
-          
-          <div class="dropdown-menu collapse" aria-labelledby="navbarDropdown">
+          <a class="nav-link concept" tabindex="-1">CONCEPT</a>
+          <div class="concept-menu collapse"  id="concept-collapse">
             <a class="dropdown-item" href="#">ブログアーカイブ</a>
             <a class="dropdown-item" href="#">お知らせアーカイブ</a>
             <a class="dropdown-item" href="#">イベントアーカイブ</a>

@@ -1,6 +1,6 @@
 @use "../../variables" as *;
 
-header {
+header {//TODO：必要ない記述を確認する
   .navbar {
     padding: 0 16px;
     background-color: $black;
@@ -22,22 +22,18 @@ header {
         .nav-link {
           padding: 15px 0;
         }
-        .dropdown-toggle::after {
-          display: none;
+        .icon-plus-wrapper{
+          margin-top:13px;
+          padding:0;
         }
-      }
-      .dropdown-menu {
-        border: none;
-        padding: 0;
-        margin-left: 12px;
-        background-color: $black;
-        border-radius: 0;
-        margin-top: 0;
-        .dropdown-item {
-          padding: 15px 0px;
-          background-color: $black;
-          color: $white;
-          font-size: $font-S;
+        .concept-menu {
+          margin-left: 12px;
+          .dropdown-item { 
+            padding: 15px 0px;
+            color: $white;
+            background-color: $black;
+            font-size: $font-S;
+          }
         }
       }
     }
@@ -58,35 +54,26 @@ header {
         margin-left: auto;
         .nav-item {
           .nav-link {
+            cursor: pointer;
             padding: 35px 20px;
-            transition-duration: 0.2s;
             &:hover {
               color: $gray_nobel;
             }
+            &:focus+ .concept-menu{
+              display: block;
+            } 
           }
-        }
-        .concept {
-          cursor: pointer;
-          &:focus + .dropdown-menu {
-            visibility: visible;
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .dropdown-menu {
-          transition-duration: 0.2s;
-          display: block;
-          visibility: hidden;
-          opacity: 0;
-          transform: translateY(-10px);
-          .dropdown-item {
-            transition-duration: 0.2s;
-            padding: 18px 50px 18px 18px;
-            &:hover {
-              background-color: $orange_bistre;
-              color: $white;
+          .concept-menu { 
+            position:absolute;
+            display: none;
+            .dropdown-item {
+              padding: 18px 50px 18px 18px;
+              &:hover {
+                background-color: $orange_bistre;
+                color: $white;
+              }
             }
-          }
+          } 
         }
       }
     }
