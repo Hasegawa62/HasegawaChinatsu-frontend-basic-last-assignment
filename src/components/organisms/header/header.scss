@@ -20,20 +20,29 @@ header {
       .nav-item {
         font-size: $font-S;
         padding: 0px;
-        .icon-plus-wrapper.collapsed{
+        .nav-link,.concept-lg{
+          padding: 15px 0;
+        }
+        .icon-wrapper{
           padding-top: 15px;
-          padding-bottom: 0px;  
-        }
-        .nav-link{
-          padding: 15px 0;
-        }
-        .concept-lg{
-          padding: 15px 0;
+          padding-bottom: 0px;
+          .icon-minus{
+            display: none;
+          }
+          &[aria-expanded="true"] {
+            .icon-minus{
+              display: block;
+            }
+            .icon-plus{
+              display: none;
+            }
+          }
         }
         .concept-menu {
           margin-left: 12px;
           padding: 0;
           .concept-item {
+            list-style: none;
             .concept-link-text{
               background-color: $black;
               padding: 15px 0;
