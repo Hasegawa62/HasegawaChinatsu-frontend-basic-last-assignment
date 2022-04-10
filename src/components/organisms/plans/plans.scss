@@ -14,7 +14,7 @@
   .plan-container {
     margin: 32px auto 0;
     .plan {
-      margin-bottom: auto;
+      margin-bottom:30px;
       &:last-child {
         margin-bottom: 24px;
       }
@@ -23,7 +23,10 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 30px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      .plan{
+        margin-bottom: auto;
+      }
     }
   }
   .button {
