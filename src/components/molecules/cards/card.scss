@@ -3,6 +3,7 @@
 .card {
   border: none;
   .card-top {
+    position: relative;
     .card-img {
       object-fit: cover;
     }
@@ -11,13 +12,13 @@
       font-size: $font-L;
       font-weight: bold;
       background: linear-gradient(to top left, transparent 50%, $white 50%);
-      padding: 0 53px 121px 6px;
+      height:150px;
+      width:150px;
       position: absolute;
       top: 0px;
       left: 0;
     }
   }
-
   .card-body {
     background-color: $white_smoke;
     padding: 30px 30px 40px;
