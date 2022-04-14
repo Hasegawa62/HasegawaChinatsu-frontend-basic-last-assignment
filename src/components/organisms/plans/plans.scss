@@ -1,0 +1,39 @@
+@use "../../variables" as *;
+
+.plans {
+  padding: 0 20px;
+  .message {
+    padding: 0;
+    h2 {
+      color: $orange_bistre;
+      @media (min-width: $breakpoint-M){
+        font-size: $font-L;
+      }
+    }
+  }
+  .plan-container {
+    margin: 32px auto 0;
+    .plan {
+      margin-bottom:30px;
+      &:last-child {
+        margin-bottom: 24px;
+      }
+    }
+    @media (min-width: $breakpoint-M) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      margin-bottom: 30px;
+      .plan{
+        margin-bottom: auto;
+      }
+    }
+  }
+  .button {
+    margin: 0 auto 35px;
+    @media (min-width: $breakpoint-M){
+      margin-bottom:100px;
+    }
+
+  }
+}
