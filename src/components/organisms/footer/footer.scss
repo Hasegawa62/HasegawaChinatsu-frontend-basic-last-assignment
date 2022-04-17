@@ -1,0 +1,79 @@
+@use "../../variables" as *;
+
+.footer{
+    text-align: center;
+    .footer-top{
+        padding:32px 20px; 
+        .footer-brand-logo{
+            img{
+                margin-bottom: 20px;
+            }
+        }
+        .footer-adress{
+            margin-bottom: 20px;
+            display: block;
+            .footer-adress-text{
+                font-size: $font-S; 
+                line-height: 2;
+            }
+        }
+        .sns-link{
+            a{
+                text-decoration: none;
+                color:$black;
+                i{
+                    margin: 0 8px;
+                    &:hover{
+                        color: $gray_nobel;
+                    }
+                }
+            }
+        }
+    }
+    .nav{
+        border: solid 1px $gray_gainsboro;
+        background-color: $white_smoke;
+        padding: 16px;
+        .nav-item{
+            width: 50%;
+            margin-bottom: 8px;
+            &:nth-last-child(-n+2){
+                margin-bottom: 0;
+            }
+            .nav-link{
+                font-size: $font-S;
+                width:fit-content;
+                color:$black;
+                padding:0;
+                &:hover{
+                    color: $orange_bistre;
+                }
+            }
+        }
+    }
+    .copyright{
+        background-color: $black;
+        color: $white;
+        padding: 16px;
+    }
+    @media (min-width: $breakpoint-M){
+        .footer-top{
+            padding: 52px 20px;
+        }   
+        .nav{
+            justify-content: center;
+            .nav-item{
+                margin-right: 8px;
+                margin-bottom: 0;
+                width:fit-content;
+                &:not(:last-child):after{
+                    content: "|";
+                }
+                .nav-link{
+                    display: inline;
+                    margin-right: 8px;   
+                }
+            }
+        }
+    }
+}
