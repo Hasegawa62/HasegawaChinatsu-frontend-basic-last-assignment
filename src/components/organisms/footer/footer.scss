@@ -23,6 +23,7 @@
                 color:$black;
                 i{
                     margin: 0 8px;
+                    transition-duration: 0.2s;
                     &:hover{
                         color: $gray_nobel;
                     }
@@ -45,6 +46,7 @@
                 width:fit-content;
                 color:$black;
                 padding:0;
+                transition-duration: 0.2s;
                 &:hover{
                     color: $orange_bistre;
                 }
@@ -55,6 +57,7 @@
         background-color: $black;
         color: $white;
         padding: 16px;
+        font-size: $font-XS;
     }
     @media (min-width: $breakpoint-M){
         .footer-top{
