@@ -1,0 +1,12 @@
+@use "../../variables" as *;
+
+.templates-news-and-events{
+    background-color: $white-smoke;
+    padding:56px 118px 92px;
+    @media (min-width: $breakpoint-L){
+        padding: 56px;
+        .events-contents{
+            margin-top: 0;
+        }
+    }
+}
