@@ -32,15 +32,13 @@
         }
     }
     .nav{
-        border: solid 1px $gray_gainsboro;
+        border-top: solid 1px $gray_gainsboro;
+        border-bottom: solid 1px $gray_gainsboro;
         background-color: $white_smoke;
         padding: 16px;
+        gap:8px 0;
         .nav-item{
             width: 50%;
-            margin-bottom: 8px;
-            &:nth-last-child(-n+2){
-                margin-bottom: 0;
-            }
             .nav-link{
                 font-size: $font-S;
                 width:fit-content;
@@ -66,15 +64,15 @@
         .nav{
             justify-content: center;
             .nav-item{
-                margin-right: 8px;
                 margin-bottom: 0;
                 width:fit-content;
                 &:not(:last-child):after{
                     content: "|";
+                    margin: 0 8px;
                 }
                 .nav-link{
                     display: inline;
-                    margin-right: 8px;   
+
                 }
             }
         }
