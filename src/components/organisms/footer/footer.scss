@@ -9,12 +9,13 @@
                 margin-bottom: 20px;
             }
         }
-        .footer-adress{
+        .footer-address{
             margin-bottom: 20px;
             display: block;
-            .footer-adress-text{
+            .footer-address-text{
                 font-size: $font-S; 
                 line-height: 2;
+                margin-bottom: 0;
             }
         }
         .sns-link{
@@ -66,7 +67,7 @@
             .nav-item{
                 margin-bottom: 0;
                 width:fit-content;
-                &:not(:last-child):after{
+                &:not(:last-child) a:after{
                     content: "|";
                     margin: 0 8px;
                 }
