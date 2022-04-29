@@ -3,7 +3,7 @@
 .organisms-events {
   .events-contents {
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     background-color: $white;
     article {
       border: 1px solid $gray_gainsboro;
@@ -23,7 +23,7 @@
           flex-shrink: 0;
           img {
             transition-duration: 0.5s;
-            object-fit: cover;
+            object-fit: contain;
           }
         }
         .events-article-title-time {
@@ -36,7 +36,7 @@
             font-weight: normal;
             display: -webkit-box;
             -webkit-box-orient: vertical;
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 2;
             overflow: hidden;
             &:hover {
               color: $orange_bistre;

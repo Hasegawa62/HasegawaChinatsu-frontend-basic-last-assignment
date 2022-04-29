@@ -8,6 +8,7 @@
     article {
       padding: 20px;
       border: 1px solid $gray_gainsboro;
+      height: 85px;
       &:not(:last-child) {
         border-bottom: none;
       }
@@ -15,7 +16,7 @@
         text-decoration: none;
         .news-time {
           font-size: $font-XS;
-          line-height: 1;
+          line-height: 12px;
           color: $gray_nobel;
           margin-bottom: 10px;
           display: block;
@@ -29,6 +30,7 @@
           font-weight: normal;
           margin: 0;
           transition-duration: 0.2s;
+          line-height: 23px;
           &:hover {
             color: $orange_bistre;
           }
