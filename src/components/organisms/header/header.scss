@@ -2,6 +2,8 @@
 
 header {
   .navbar {
+    width:100%;
+    position:absolute;
     padding: 0 16px;
     background-color: $black;
     .navbar-brand {
